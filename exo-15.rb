@@ -3,10 +3,16 @@
 
 
 
-puts "Choisi un nombre entre 1 et 25"
-number = gets.chomp.to_i
-i= 1
-while i < 25
-    1= i + 1
-    puts i
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+nombre_etage = gets.chomp.to_i
+
+
+while nombre_etage < 1 || nombre_etage > 25
+    puts "ERREUR, ton nombre n'est pas compris entre 1 et 25\n Essaye encore:"
+   nombre_etage = gets.chomp.to_i
+end
+
+puts "Voici la pyramide"
+for i in 1..nombre_etage do
+    puts "#" * i
 end
