@@ -1,7 +1,8 @@
-#Afficher les années (pas fini)
+#Afficher les années 
 
 puts "Quelle est ton année de naissance ? "
-user_birthyear= gets.chomps .to_i
-year= 
+annee= gets.chomps .to_i
+while annee <=2022
+   puts annee+=1
     
 end 
